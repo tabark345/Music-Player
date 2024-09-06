@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+.container{
+    width: 100%;
+    height: 100vh;
+
+    /*background: linear-gradient(45deg, hsla(335, 61%, 30%, 1) 0%, hsla(276, 74%, 24%, 1) 50%, hsla(217, 60%, 30%, 1) 100%);*/
+    background-image: url(/image/bg.jpg);
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card{
+    width: 300px;
+    background-color:#212936 ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.card .head-song{
+    width: 265px;
+    border-radius: 20px;
+}
+.card h2{
+    color:#E5E7EB ;
+    font-size: 1rem;
+}
+.card p{
+    font-size: 0.75rem;
+    color:#4D5562 ;
+}
+.card .player-prograss{
+    background-color: #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 6px;
+    width: 100%;
+    margin-top: 20px;
+}
+.card .player-prograss .prograss{
+    background-color:#C93B76 ;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+.card .player-prograss .music-duration{
+    position: relative;
+    top: -27px;
+    color: #4D5562;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.625rem;
+}
+.card .play-record{
+    display: flex;
+    gap: 15px;
+}
+
+
+.card .play-record .play-song{
+    background-color: #C93B76;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
